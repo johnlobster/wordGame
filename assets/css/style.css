@@ -1,0 +1,19 @@
+/* Style sheet for word game 
+John Webster */
+
+body {
+    background-image: url(../images/letters-background.jpg);
+    background-repeat: repeat;
+}
+
+header {
+    background-color: white;
+    
+}
+main {
+    background-color: white;
+}
+
+#StatusBar {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="text-center mb-4 mt-4">
+        <h1>Word game</h1>
+    </header>
+    
+    <main class="container">
+        <div class="row justify-content-md-center">
+            <div id="StatusBar" class="col-md-6 justify-content-md-center mb-4 mt-3">
+                <span id="StatusInfo">
+                    Press any key to start game
+                </span>
+            </div>
+        </div>
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <table class = "table">
+                    <tbody>
+                        <tr>
+                            <td> Games played </td>
+                            <td id="gamesPlayed" class="text-justify-left"></td>
+                        </tr>
+                        <tr>
+                            <td> Games won </td>
+                            <td id="gamesWon"></td>
+                        </tr>
+                        <tr>
+                            <td> Games lost </td>
+                            <td id="gamesLost"></td>
+                        </tr>
+                        <tr>
+                            <td> Word so far </td>
+                            <td id="gameString"></td>
+                        </tr>
+                        <tr>
+                            <td> Letters tried </td>
+                            <td id="lettersTried"></td>
+                        </tr>
+                        <tr>
+                            <td> Tries so far </td>
+                            <td id="triesCount"></td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+                
+                
+            </tr>
+        </table>
+    </div>
+</div>
+</main>
+
+<!-- run the game -->
+<script src="assets/js/wordgame.js"></script> 
+
+<!-- link bootstrap javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
