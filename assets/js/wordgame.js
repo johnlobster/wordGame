@@ -10,6 +10,8 @@ var gamesPlayed = 0;
 var gamesWon = 0;
 var gamesLost = 0;
 var maxTries = 12; // maximum number of tries allowed
+var winSound;
+var loseSound;
 
 // variables that change during game
 var wordIndex = 0;
@@ -76,6 +78,9 @@ function sound(src) {
     }
   }
 
+  winSound = new sound("assets/sounds/service-bell_daniel_simion.mp3"); // sound from SoundBible.com
+  loseSound = new sound("assets/sounds/Uuuuuu-Paula-1357936016.mp3"); // sound from SoundBible.com
+
 // main loop - use key presses to create loop
 document.onkeyup = function(event) {
     // Determines which key was pressed.
@@ -117,6 +122,7 @@ document.onkeyup = function(event) {
             gamesPlayed += 1;
             gamesWon += 1;
             writeStatus("You won - press any key to continue");
+            winSound.play();
             gameRunning = false;
             
         }
@@ -126,6 +132,7 @@ document.onkeyup = function(event) {
             gamesPlayed += 1;
             gamesLost += 1;
             writeStatus("You lost - press any key to continue");
+            loseSound.play();
             gameRunning = false;
         }
     }
